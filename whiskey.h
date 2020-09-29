@@ -5,10 +5,10 @@
 #include "condimentdecorator.h"
 
 
-class whiskey : public CondimentDecorator
+class Whiskey : public CondimentDecorator
 {
 public:
-    whiskey(Beverage*);
+    Whiskey(Beverage*);
     virtual double cost();
     virtual QString getDescription();
 };

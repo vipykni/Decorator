@@ -1,15 +1,15 @@
 #include "whiskey.h"
 
-whiskey::whiskey( Beverage *b) : CondimentDecorator (b)
+Whiskey::Whiskey( Beverage *b) : CondimentDecorator (b)
 {
 
 }
 
-double whiskey::cost() {
+double Whiskey::cost() {
     return 54.0 + beverage->cost();
 }
 
-QString whiskey::getDescription() {
+QString Whiskey::getDescription() {
     return beverage->getDescription() + ", Whiskey";
 }
 
