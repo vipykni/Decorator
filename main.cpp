@@ -6,6 +6,7 @@
 #include "condimentdecorator.h"
 #include "milk.h"
 #include "mocha.h"
+#include "whiskey.h"
 
 using namespace std;
 
@@ -20,6 +21,7 @@ int main(int argc, char *argv[])
     Beverage *beverage2 = new DarkRoast();
     beverage2 = new Milk(beverage2);
     beverage2 = new Mocha(beverage2);
+    beverage2 = new whiskey(beverage2);
 
     cout << beverage2->getDescription().toStdString()
          << " " << beverage2->cost() << "p." << endl;
