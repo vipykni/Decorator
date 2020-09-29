@@ -18,7 +18,10 @@ SOURCES += \
         main.cpp \
     beverage.cpp \
     houseblend.cpp \
-    darkroast.cpp
+    darkroast.cpp \
+    condimentdecorator.cpp \
+    milk.cpp \
+    mocha.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -28,4 +31,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     beverage.h \
     houseblend.h \
-    darkroast.h
+    darkroast.h \
+    condimentdecorator.h \
+    milk.h \
+    mocha.h
